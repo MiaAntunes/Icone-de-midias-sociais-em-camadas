@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+/*DIV CARD*/
+
+.card{
+    align-items: center;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    height: 100%;
+}
+
+/*BOX icones*/
+
+.box, span{
+    transform: rotate3d(2, 1, 1, -60deg); /*Foi utilizado o Transform do CSS translate3d(x,y,z)*/
+}
+
+span{
+    width: 108px;
+}
+
