@@ -1,29 +1,131 @@
+
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 
 body{
-    height: 100vh;
-}
-
-/*DIV CARD*/
-
-.card{
     align-items: center;
     display: flex;
-    gap: 5rem;
+    height: 100vh;
     justify-content: center;
-    height: 100%;
 }
 
-/*BOX icones*/
-
-.box, span{
-    transform: rotate3d(2, 1, 1, -60deg); /*Foi utilizado o Transform do CSS translate3d(x,y,z)*/
+ul{
+    display: flex;
+    gap: 4rem;
 }
 
-span{
-    width: 108px;
+li {
+    display: flex;
+    flex-direction: column;
 }
+
+ul li{
+    position: relative;
+    list-style-type:none;
+    width: 60px;
+    height: 60px;
+    margin: 0 2rem;
+    transform: rotate(-30deg) skew(25deg);
+}
+
+
+ul li span{
+    height: 150%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    width: 150%; /*foi utilizado a porcentagem para a melhor proporção tanto da imagem quando das sombras*/
+}
+
+
+
+/*SPANS E SUAS IMAGENS*/
+
+.foto-principal{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#foto-principal-face{
+    background-image: url(../img/Facebook.svg);
+}
+
+#foto-principal-twitter{
+    background-image: url(../img/Twitter.svg);
+}
+
+#foto-principal-linkedin{
+    background-image: url(../img/Linkedin.svg);
+}
+
+#foto-principal-insta{
+    background-image: url(../img/Instagram_icon\ 1.svg);
+}
+
+/*---Camadas e as opacidades HOVER---*/
+
+
+ul li:hover .img-1{
+    transform: translate(50px, -50px);
+    opacity: .2;
+}
+
+ul li:hover .img-2{
+    transform: translate(40px, -40px);
+    opacity: .4;
+
+}
+
+ul li:hover .img-3{
+    transform: translate(30px, -30px);
+    opacity: .6;
+}
+
+ul li:hover .img-4{
+    transform: translate(20px, -20px);
+    opacity: .8;
+}
+
+ul li:hover .img-5{
+    background-color: transparent;
+    transform: translate(10px, -10px);
+    opacity: .9;
+}
+
+/*Imagens e cores HOVER*/
+
+ul li:hover .foto-principal{
+    transform: translate(55px,-55px);
+    transition: 0.2s;
+}
+
+.img-facebook{
+    background-color:#4267B2;;
+}
+
+.img-twitter{
+    background-color: #00ACED;
+}
+
+.img-linkedin{
+    background-color: #0084B1;
+}
+
+.img-instagram{
+    background: linear-gradient(217.98deg, #C536A4 36.44%, rgba(243, 123, 50, 0.97) 69.67%, #FED06E 89.41%);
+}
+
+
+
+
+
+
+
+
+
+
 
