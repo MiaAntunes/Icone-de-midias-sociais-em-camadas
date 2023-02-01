@@ -16,11 +16,6 @@ ul{
     gap: 4rem;
 }
 
-li {
-    display: flex;
-    flex-direction: column;
-}
-
 ul li{
     position: relative;
     list-style-type:none;
